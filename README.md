@@ -10,7 +10,7 @@ This package provides extensions to the `Interpret` API of the [Technician](http
 
 This package uses [@iarna/toml](https://www.npmjs.com/package/@iarna/toml) for TOML deserialization. Both async and sync operation is supported.
 
-[![@iarna/toml](https://img.shields.io/npm/v/technician?label=@iarna/toml)](https://www.npmjs.com/package/@iarna/toml) 
+[![@iarna/toml](https://img.shields.io/npm/v/@iarna/toml?label=@iarna/toml)](https://www.npmjs.com/package/@iarna/toml) 
 
 ## Installation
 
