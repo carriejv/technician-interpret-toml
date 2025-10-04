@@ -54,7 +54,7 @@ Interpret.buffer.asTOML = (configSource, encoding = 'utf8') => {
             try {
                 return text ? await TOML.parse.async(text) : undefined;
             }
-            catch(err) {
+            catch {
                 return undefined;
             }
         },
@@ -63,7 +63,7 @@ Interpret.buffer.asTOML = (configSource, encoding = 'utf8') => {
             try {
                 return text ? TOML.parse(text) : undefined;
             }
-            catch(err) {
+            catch {
                 return undefined;
             }
         }
@@ -77,7 +77,7 @@ Interpret.buffer.asStringOrTOML = (configSource, encoding = 'utf8') => {
             try {
                 return text ? await TOML.parse.async(text) : undefined;
             }
-            catch(err) {
+            catch {
                 return text;
             }
         },
@@ -86,7 +86,7 @@ Interpret.buffer.asStringOrTOML = (configSource, encoding = 'utf8') => {
             try {
                 return text ? TOML.parse(text) : undefined;
             }
-            catch(err) {
+            catch {
                 return text;
             }
         }
@@ -99,7 +99,7 @@ Interpret.string.asTOML = configSource => {
             try {
                 return entity.value ? await TOML.parse.async(entity.value) : undefined;
             }
-            catch(err) {
+            catch {
                 return undefined;
             }
         },
@@ -107,7 +107,7 @@ Interpret.string.asTOML = configSource => {
             try {
                 return entity.value ? TOML.parse(entity.value) : undefined;
             }
-            catch(err) {
+            catch {
                 return undefined;
             }
         }
@@ -120,7 +120,7 @@ Interpret.string.asStringOrTOML = configSource => {
             try {
                 return entity.value ? await TOML.parse.async(entity.value) : undefined;
             }
-            catch(err) {
+            catch {
                 return entity.value;
             }
         },
@@ -128,7 +128,7 @@ Interpret.string.asStringOrTOML = configSource => {
             try {
                 return entity.value ? TOML.parse(entity.value) : undefined;
             }
-            catch(err) {
+            catch {
                 return entity.value;
             }
         }
